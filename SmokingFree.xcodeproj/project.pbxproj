@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2CE69EB595921EA4D330DF8E /* Pods_SmokingFree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 416661AC57AEDE23372448A1 /* Pods_SmokingFree.framework */; };
+		F087FCED266AFCF800B69802 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F087FCEC266AFCF800B69802 /* Constants.swift */; };
 		F0FE9CCF266AE69E00A44C3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE9CCE266AE69E00A44C3E /* AppDelegate.swift */; };
 		F0FE9CD1266AE69E00A44C3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE9CD0266AE69E00A44C3E /* SceneDelegate.swift */; };
 		F0FE9CD3266AE69E00A44C3E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE9CD2266AE69E00A44C3E /* MainViewController.swift */; };
@@ -21,6 +22,7 @@
 		2ADFA7C4248AB9DA91500316 /* Pods-SmokingFree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmokingFree.release.xcconfig"; path = "Target Support Files/Pods-SmokingFree/Pods-SmokingFree.release.xcconfig"; sourceTree = "<group>"; };
 		416661AC57AEDE23372448A1 /* Pods_SmokingFree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmokingFree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F0706C861BB43ED41467D2 /* Pods-SmokingFree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmokingFree.debug.xcconfig"; path = "Target Support Files/Pods-SmokingFree/Pods-SmokingFree.debug.xcconfig"; sourceTree = "<group>"; };
+		F087FCEC266AFCF800B69802 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F0FE9CCB266AE69E00A44C3E /* SmokingFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmokingFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0FE9CCE266AE69E00A44C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0FE9CD0266AE69E00A44C3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +60,6 @@
 				B4F0706C861BB43ED41467D2 /* Pods-SmokingFree.debug.xcconfig */,
 				2ADFA7C4248AB9DA91500316 /* Pods-SmokingFree.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,6 +92,7 @@
 				F0FE9CD9266AE69E00A44C3E /* LaunchScreen.storyboard */,
 				F0FE9CDC266AE69E00A44C3E /* Info.plist */,
 				F0FE9CE2266AF40100A44C3E /* StatViewController.swift */,
+				F087FCEC266AFCF800B69802 /* Constants.swift */,
 			);
 			path = SmokingFree;
 			sourceTree = "<group>";
@@ -209,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F087FCED266AFCF800B69802 /* Constants.swift in Sources */,
 				F0FE9CD3266AE69E00A44C3E /* MainViewController.swift in Sources */,
 				F0FE9CCF266AE69E00A44C3E /* AppDelegate.swift in Sources */,
 				F0FE9CE3266AF40100A44C3E /* StatViewController.swift in Sources */,
