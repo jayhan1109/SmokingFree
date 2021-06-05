@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CE69EB595921EA4D330DF8E /* Pods_SmokingFree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 416661AC57AEDE23372448A1 /* Pods_SmokingFree.framework */; };
+		F0FE9CCF266AE69E00A44C3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE9CCE266AE69E00A44C3E /* AppDelegate.swift */; };
+		F0FE9CD1266AE69E00A44C3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE9CD0266AE69E00A44C3E /* SceneDelegate.swift */; };
+		F0FE9CD3266AE69E00A44C3E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE9CD2266AE69E00A44C3E /* MainViewController.swift */; };
+		F0FE9CD6266AE69E00A44C3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0FE9CD4266AE69E00A44C3E /* Main.storyboard */; };
+		F0FE9CD8266AE69E00A44C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0FE9CD7266AE69E00A44C3E /* Assets.xcassets */; };
+		F0FE9CDB266AE69E00A44C3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0FE9CD9266AE69E00A44C3E /* LaunchScreen.storyboard */; };
+		F0FE9CE3266AF40100A44C3E /* StatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE9CE2266AF40100A44C3E /* StatViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2ADFA7C4248AB9DA91500316 /* Pods-SmokingFree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmokingFree.release.xcconfig"; path = "Target Support Files/Pods-SmokingFree/Pods-SmokingFree.release.xcconfig"; sourceTree = "<group>"; };
+		416661AC57AEDE23372448A1 /* Pods_SmokingFree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmokingFree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F0706C861BB43ED41467D2 /* Pods-SmokingFree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmokingFree.debug.xcconfig"; path = "Target Support Files/Pods-SmokingFree/Pods-SmokingFree.debug.xcconfig"; sourceTree = "<group>"; };
+		F0FE9CCB266AE69E00A44C3E /* SmokingFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmokingFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0FE9CCE266AE69E00A44C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0FE9CD0266AE69E00A44C3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F0FE9CD2266AE69E00A44C3E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F0FE9CD5266AE69E00A44C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0FE9CD7266AE69E00A44C3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0FE9CDA266AE69E00A44C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0FE9CDC266AE69E00A44C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0FE9CE2266AF40100A44C3E /* StatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0FE9CC8266AE69E00A44C3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE69EB595921EA4D330DF8E /* Pods_SmokingFree.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		559BEF22C79DDCB2DD03F5C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				416661AC57AEDE23372448A1 /* Pods_SmokingFree.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD18DFEBAB137C2FF8C3F360 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4F0706C861BB43ED41467D2 /* Pods-SmokingFree.debug.xcconfig */,
+				2ADFA7C4248AB9DA91500316 /* Pods-SmokingFree.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F0FE9CC2266AE69E00A44C3E = {
+			isa = PBXGroup;
+			children = (
+				F0FE9CCD266AE69E00A44C3E /* SmokingFree */,
+				F0FE9CCC266AE69E00A44C3E /* Products */,
+				BD18DFEBAB137C2FF8C3F360 /* Pods */,
+				559BEF22C79DDCB2DD03F5C2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0FE9CCC266AE69E00A44C3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0FE9CCB266AE69E00A44C3E /* SmokingFree.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0FE9CCD266AE69E00A44C3E /* SmokingFree */ = {
+			isa = PBXGroup;
+			children = (
+				F0FE9CCE266AE69E00A44C3E /* AppDelegate.swift */,
+				F0FE9CD0266AE69E00A44C3E /* SceneDelegate.swift */,
+				F0FE9CD2266AE69E00A44C3E /* MainViewController.swift */,
+				F0FE9CD4266AE69E00A44C3E /* Main.storyboard */,
+				F0FE9CD7266AE69E00A44C3E /* Assets.xcassets */,
+				F0FE9CD9266AE69E00A44C3E /* LaunchScreen.storyboard */,
+				F0FE9CDC266AE69E00A44C3E /* Info.plist */,
+				F0FE9CE2266AF40100A44C3E /* StatViewController.swift */,
+			);
+			path = SmokingFree;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0FE9CCA266AE69E00A44C3E /* SmokingFree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0FE9CDF266AE69E00A44C3E /* Build configuration list for PBXNativeTarget "SmokingFree" */;
+			buildPhases = (
+				D1EF534A5A8D8E7F1E8DFDF9 /* [CP] Check Pods Manifest.lock */,
+				F0FE9CC7266AE69E00A44C3E /* Sources */,
+				F0FE9CC8266AE69E00A44C3E /* Frameworks */,
+				F0FE9CC9266AE69E00A44C3E /* Resources */,
+				30C540991DB7D58DFEAF706F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmokingFree;
+			productName = SmokingFree;
+			productReference = F0FE9CCB266AE69E00A44C3E /* SmokingFree.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0FE9CC3266AE69E00A44C3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F0FE9CCA266AE69E00A44C3E = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = F0FE9CC6266AE69E00A44C3E /* Build configuration list for PBXProject "SmokingFree" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0FE9CC2266AE69E00A44C3E;
+			productRefGroup = F0FE9CCC266AE69E00A44C3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0FE9CCA266AE69E00A44C3E /* SmokingFree */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0FE9CC9266AE69E00A44C3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FE9CDB266AE69E00A44C3E /* LaunchScreen.storyboard in Resources */,
+				F0FE9CD8266AE69E00A44C3E /* Assets.xcassets in Resources */,
+				F0FE9CD6266AE69E00A44C3E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30C540991DB7D58DFEAF706F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmokingFree/Pods-SmokingFree-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmokingFree/Pods-SmokingFree-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmokingFree/Pods-SmokingFree-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1EF534A5A8D8E7F1E8DFDF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmokingFree-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0FE9CC7266AE69E00A44C3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FE9CD3266AE69E00A44C3E /* MainViewController.swift in Sources */,
+				F0FE9CCF266AE69E00A44C3E /* AppDelegate.swift in Sources */,
+				F0FE9CE3266AF40100A44C3E /* StatViewController.swift in Sources */,
+				F0FE9CD1266AE69E00A44C3E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F0FE9CD4266AE69E00A44C3E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0FE9CD5266AE69E00A44C3E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0FE9CD9266AE69E00A44C3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0FE9CDA266AE69E00A44C3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0FE9CDD266AE69E00A44C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0FE9CDE266AE69E00A44C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0FE9CE0266AE69E00A44C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4F0706C861BB43ED41467D2 /* Pods-SmokingFree.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T79F4XUAMW;
+				INFOPLIST_FILE = SmokingFree/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayhan1109.SmokingFree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F0FE9CE1266AE69E00A44C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ADFA7C4248AB9DA91500316 /* Pods-SmokingFree.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T79F4XUAMW;
+				INFOPLIST_FILE = SmokingFree/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayhan1109.SmokingFree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0FE9CC6266AE69E00A44C3E /* Build configuration list for PBXProject "SmokingFree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FE9CDD266AE69E00A44C3E /* Debug */,
+				F0FE9CDE266AE69E00A44C3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0FE9CDF266AE69E00A44C3E /* Build configuration list for PBXNativeTarget "SmokingFree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FE9CE0266AE69E00A44C3E /* Debug */,
+				F0FE9CE1266AE69E00A44C3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0FE9CC3266AE69E00A44C3E /* Project object */;
+}
