@@ -85,11 +85,20 @@
                                                     <action selector="checkPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hxg-4B-tKt"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great!! You already saved money today" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MR2-sp-m6G">
+                                                <rect key="frame" x="0.0" y="48.000000000000007" width="428" height="71.666666666666686"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="Hz0-nZ-84C" firstAttribute="width" secondItem="Cby-hG-0QT" secondAttribute="width" multiplier="0.25" id="6QB-LX-c13"/>
+                                            <constraint firstAttribute="trailing" secondItem="MR2-sp-m6G" secondAttribute="trailing" id="7Dc-Ip-GdL"/>
+                                            <constraint firstItem="MR2-sp-m6G" firstAttribute="centerY" secondItem="Cby-hG-0QT" secondAttribute="centerY" id="reD-Qj-uZG"/>
                                             <constraint firstItem="Hz0-nZ-84C" firstAttribute="centerX" secondItem="Cby-hG-0QT" secondAttribute="centerX" id="seh-PX-shl"/>
                                             <constraint firstItem="Hz0-nZ-84C" firstAttribute="centerY" secondItem="Cby-hG-0QT" secondAttribute="centerY" multiplier="0.8" id="tIS-gK-6Di"/>
+                                            <constraint firstItem="MR2-sp-m6G" firstAttribute="leading" secondItem="Cby-hG-0QT" secondAttribute="leading" id="zXq-jJ-1w1"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -117,6 +126,7 @@
                     <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="EbP-vt-ZNI"/>
                     <connections>
                         <outlet property="checkButton" destination="Hz0-nZ-84C" id="DvO-bG-MT8"/>
+                        <outlet property="checkLabel" destination="MR2-sp-m6G" id="L88-YT-Bam"/>
                         <outlet property="moneyLabel" destination="7kj-6U-Qey" id="PAN-Qj-esx"/>
                     </connections>
                 </viewController>
