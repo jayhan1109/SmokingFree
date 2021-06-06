@@ -50,6 +50,8 @@ class StatViewController: UIViewController {
         let chartData = BarChartData(dataSet: chartDataSet)
         barChartView.data = chartData
         
+        barChartView.legend.font = UIFont(name: "HelveticaNeue", size: 15.0)!
+        
         barChartView.xAxis.labelPosition = .bottom
         
         barChartView.xAxis.setLabelCount(x.count, force: false)
@@ -61,6 +63,8 @@ class StatViewController: UIViewController {
         barChartView.leftAxis.axisMaximum = yMaximum
         
         barChartView.leftAxis.axisMinimum = 0.0
+        
+        barChartView.leftAxis.labelFont = UIFont(name: "HelveticaNeue", size: 20.0)!
         
         barChartView.rightAxis.enabled = false
         
