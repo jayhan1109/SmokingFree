@@ -12,16 +12,18 @@ class MainViewController: UIViewController {
     @IBOutlet weak var moneyLabel: UILabel!
     @IBOutlet weak var checkButton: UIButton!
     @IBOutlet weak var checkLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Update app at midnight
-        NotificationCenter.default.addObserver(self, selector:#selector(calendarDayDidChange), name:.NSCalendarDayChanged, object:nil)
-        
+        if K.DB.integer(forKey: K.targetDay) != K.CurrentDate.today {
+            calendarDayDidChange()
+        }
+
         moneyLabel.text = formatToNumber(num: K.DB.integer(forKey: K.totalKey))
-        
-        
+
+
         let isDone = K.DB.bool(forKey: K.isDoneKey)
 
         if isDone {
@@ -33,7 +35,7 @@ class MainViewController: UIViewController {
             checkLabel.isHidden = true
         }
         
-        }
+    }
     
     @IBAction func checkPressed(_ sender: UIButton) {
         let total = K.DB.integer(forKey: K.totalKey)
@@ -52,13 +54,14 @@ class MainViewController: UIViewController {
         
         K.DB.set(true, forKey: K.isDoneKey)
         
+        K.DB.set(K.CurrentDate.today, forKey: K.targetDay)
     }
     
     func saveIntoDB(){
         
         // Week
         let thisWeek = K.DB.integer(forKey: "\(K.CurrentDate.currentYear)/\(K.CurrentDate.currentWeek)")
-
+        
         K.DB.set(thisWeek + 1, forKey: "\(K.CurrentDate.currentYear)/\(K.CurrentDate.currentWeek)")
         
         // Month
