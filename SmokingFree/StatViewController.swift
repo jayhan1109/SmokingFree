@@ -14,6 +14,8 @@ class StatViewController: UIViewController {
     var monthData: [Data] = []
     var weekData: [Data] = []
     
+    var xAxisLabels: [String] = []
+    
     var xAxis: [Int]?
     var yAxis: [Int]?
     
@@ -66,9 +68,11 @@ class StatViewController: UIViewController {
         
         barChartView.xAxis.setLabelCount(x.count, force: false)
         
+        barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: xAxisLabels)
+        
         barChartView.xAxis.drawGridLinesEnabled = false
         
-        barChartView.xAxis.drawLabelsEnabled=false
+//        barChartView.xAxis.drawLabelsEnabled=false
         
         barChartView.leftAxis.axisMaximum = yMaximum
         
@@ -103,7 +107,10 @@ class StatViewController: UIViewController {
             }
 
             weekData.append(Data(key: (weekKey-i), value: K.DB.integer(forKey: "\(yearKey)/\(weekKey-i)")))
+            
         }
+        
+        weekData.reverse()
     }
     
     func getMonthData(){
@@ -122,6 +129,8 @@ class StatViewController: UIViewController {
             monthData.append(Data(key: (monthKey-i), value: K.DB.integer(forKey: "\(yearKey)/\(monthKey-i)")))
         }
         
+        monthData.reverse()
+        
     }
     
     func showWeekData(){
@@ -134,6 +143,12 @@ class StatViewController: UIViewController {
         xAxis = Array(xCollection)
         yAxis = Array(yCollection)
         yMaximum = Double(yAxis?.max() ?? 0) + 1.0
+        
+        xAxisLabels = weekData.map({ data in
+            String(data.key)
+        })
+        
+        print(xAxisLabels)
         
         descLabel.text = "Days of saving money by weekly"
     }
@@ -148,6 +163,10 @@ class StatViewController: UIViewController {
         xAxis = Array(xCollection)
         yAxis = Array(yCollection)
         yMaximum = Double(yAxis?.max() ?? 0) + 1.0
+        
+        xAxisLabels = monthData.map({ data in
+            String(data.key)
+        })
         
         descLabel.text = "Days of saving money by monthly"
     }
@@ -166,9 +185,6 @@ class StatViewController: UIViewController {
     }
     
     @IBAction func indexChanged(_ sender: UISegmentedControl) {
-        print("hey")
-        print(segmentedControl.selectedSegmentIndex)
-        print("hey")
         switch segmentedControl.selectedSegmentIndex {
         case 0:
             showWeekData()
