@@ -1,7 +1,11 @@
 # SmokingFree
 ### Focus on CocoaPods, Tab Bar Controller, UserDefaults
 
+## DEMO
+![Simulator Screen Recording - iPhone 12 Pro Max - 2021-06-16 at 14 24 37](https://user-images.githubusercontent.com/24958454/122295923-a30b7300-ceae-11eb-9c28-1df591cbb167.gif)
 
+
+## Screenshots
 ![Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-13 at 16 15 49](https://user-images.githubusercontent.com/24958454/121824765-70216f00-cc63-11eb-963b-5e3dabd5525d.png)
 ![Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-13 at 16 15 53](https://user-images.githubusercontent.com/24958454/121824767-71eb3280-cc63-11eb-9f63-b224066607c5.png)
 ![Simulator Screen Shot - iPhone 12 Pro Max - 2021-06-13 at 16 16 03](https://user-images.githubusercontent.com/24958454/121824769-73b4f600-cc63-11eb-8d87-9333bd1b5940.png)
