@@ -10,6 +10,13 @@ import Charts
 
 class StatViewController: UIViewController {
     
+    // MARK: - IBOutlet
+    
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var barChartView: BarChartView!
+    @IBOutlet weak var descLabel: UILabel!
+    
+    // MARK: - Properties
     
     var monthData: [Data] = []
     var weekData: [Data] = []
@@ -21,9 +28,7 @@ class StatViewController: UIViewController {
     
     var yMaximum = 7.0
     
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
-    @IBOutlet weak var barChartView: BarChartView!
-    @IBOutlet weak var descLabel: UILabel!
+    // MARK: - Lifecycle
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -37,9 +42,6 @@ class StatViewController: UIViewController {
         getMonthData()
         getWeekData()
         
-        print(monthData)
-        print(weekData)
-        
         showWeekData()
         
         descLabel.text = "Days of saving money by weekly"
@@ -47,6 +49,10 @@ class StatViewController: UIViewController {
         setChart(x: xAxis!, y: yAxis!)
     }
     
+    // MARK: - Helpers
+    
+    // Setup the chart with the data
+    // The index of segment control determines which one to use between week and month
     func setChart(x: [Int], y: [Int]){
         var dataEntries: [BarChartDataEntry] = []
         
@@ -56,13 +62,15 @@ class StatViewController: UIViewController {
         }
         
         let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Days")
-        
+        chartDataSet.highlightEnabled = false
         chartDataSet.colors = [.systemTeal]
         
         let chartData = BarChartData(dataSet: chartDataSet)
         barChartView.data = chartData
         
         barChartView.legend.font = UIFont(name: "HelveticaNeue", size: 15.0)!
+        
+        // Configure xAxis
         
         barChartView.xAxis.labelPosition = .bottom
         
@@ -72,7 +80,7 @@ class StatViewController: UIViewController {
         
         barChartView.xAxis.drawGridLinesEnabled = false
         
-//        barChartView.xAxis.drawLabelsEnabled=false
+        // Configure leftAxis
         
         barChartView.leftAxis.axisMaximum = yMaximum
         
@@ -80,19 +88,22 @@ class StatViewController: UIViewController {
         
         barChartView.leftAxis.labelFont = UIFont(name: "HelveticaNeue", size: 20.0)!
         
+        // Configure rightAxis
+        
         barChartView.rightAxis.enabled = false
+        
+        // Configure other settings
         
         barChartView.drawValueAboveBarEnabled = false
         
         barChartView.drawBarShadowEnabled = false
-        
-        chartDataSet.highlightEnabled = false
         
         barChartView.doubleTapToZoomEnabled = false
         
         barChartView.barData?.setDrawValues(false)
     }
     
+    // Get recent 7 weeks data
     func getWeekData(){
         
         weekData = []
@@ -107,12 +118,12 @@ class StatViewController: UIViewController {
             }
 
             weekData.append(Data(key: (weekKey-i), value: K.DB.integer(forKey: "\(yearKey)/\(weekKey-i)")))
-            
         }
         
         weekData.reverse()
     }
     
+    // Get recent 7 months data
     func getMonthData(){
         
         monthData = []
@@ -133,6 +144,7 @@ class StatViewController: UIViewController {
         
     }
     
+    // Show week data to the Segment Control
     func showWeekData(){
         let xCollection = weekData.map { data in
             data.key
@@ -153,6 +165,7 @@ class StatViewController: UIViewController {
         descLabel.text = "Days of saving money by weekly"
     }
     
+    // Show month data to the Segment Control
     func showMonthData(){
         let xCollection = monthData.map { data in
             data.key
@@ -171,6 +184,7 @@ class StatViewController: UIViewController {
         descLabel.text = "Days of saving money by monthly"
     }
     
+    // Update stat between week and month by the index of the segment control
     func updateStat() {
         getWeekData()
         getMonthData()
@@ -183,6 +197,9 @@ class StatViewController: UIViewController {
             setChart(x: xAxis!, y: yAxis!)
         }
     }
+    
+    
+    // MARK: - IBAction
     
     @IBAction func indexChanged(_ sender: UISegmentedControl) {
         switch segmentedControl.selectedSegmentIndex {

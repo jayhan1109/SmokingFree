@@ -17,7 +17,6 @@ struct K {
     static let targetDay = "targetDay"
     
     struct CurrentDate {
-        
         static let currentYear = NSCalendar.current.component(.year, from: Date())
         static let currentMonth = NSCalendar.current.component(.month, from: Date())
         static let currentWeek = NSCalendar.current.component(.weekOfYear, from: Date())
