@@ -44,7 +44,7 @@ class StatViewController: UIViewController {
         
         showWeekData()
         
-        descLabel.text = "Days of saving money by weekly"
+        descLabel.text = K.SegmentText.week
         
         setChart(x: xAxis!, y: yAxis!)
     }
@@ -114,7 +114,7 @@ class StatViewController: UIViewController {
         for i in 0...6{
             if weekKey - i < 1 {
                 yearKey -= 1
-                weekKey = 58
+                weekKey = 52 + i
             }
 
             weekData.append(Data(key: (weekKey-i), value: K.DB.integer(forKey: "\(yearKey)/\(weekKey-i)")))
@@ -134,7 +134,7 @@ class StatViewController: UIViewController {
         for i in 0...6{
             if monthKey - i < 1 {
                 yearKey -= 1
-                monthKey = 18
+                monthKey = 12 + i
             }
 
             monthData.append(Data(key: (monthKey-i), value: K.DB.integer(forKey: "\(yearKey)/\(monthKey-i)")))
@@ -162,7 +162,7 @@ class StatViewController: UIViewController {
         
         print(xAxisLabels)
         
-        descLabel.text = "Days of saving money by weekly"
+        descLabel.text = K.SegmentText.week
     }
     
     // Show month data to the Segment Control
@@ -181,7 +181,7 @@ class StatViewController: UIViewController {
             String(data.key)
         })
         
-        descLabel.text = "Days of saving money by monthly"
+        descLabel.text = K.SegmentText.month
     }
     
     // Update stat between week and month by the index of the segment control

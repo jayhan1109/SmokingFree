@@ -23,4 +23,8 @@ struct K {
         static let today = NSCalendar.current.component(.day, from: Date())
     }
     
+    struct SegmentText {
+        static let week = "Days of saving money by weekly"
+        static let month = "Days of saving money by monthly"
+    }
 }
