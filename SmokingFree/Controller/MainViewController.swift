@@ -27,6 +27,8 @@ class MainViewController: UIViewController {
     
     // Configure UI when load the view
     func configureUI(){
+        
+        // Check if the date is changed
         if K.DB.integer(forKey: K.targetDay) != K.CurrentDate.today {
             calendarDayDidChange()
         }
@@ -36,6 +38,7 @@ class MainViewController: UIViewController {
 
         let isDone = K.DB.bool(forKey: K.isDoneKey)
 
+        // If the user already clicked the check button today, it doesnt appear on the app until the midnight
         if isDone {
             checkButton.isHidden = true
             checkLabel.isHidden = false
@@ -46,15 +49,15 @@ class MainViewController: UIViewController {
         }
     }
     
-    // Increase data by 1 when user clicks the button
+    // Increase week and month data by 1 when user clicks the button
     private func saveIntoDB(){
         
-        // Increase week data
+        // Increase current week data by 1
         let thisWeek = K.DB.integer(forKey: "\(K.CurrentDate.currentYear)/\(K.CurrentDate.currentWeek)")
         
         K.DB.set(thisWeek + 1, forKey: "\(K.CurrentDate.currentYear)/\(K.CurrentDate.currentWeek)")
         
-        // Increase month data
+        // Increase current month data by 1
         let thisMonth = K.DB.integer(forKey: "\(K.CurrentDate.currentYear)/\(K.CurrentDate.currentMonth)")
         
         K.DB.set(thisMonth + 1, forKey: "\(K.CurrentDate.currentYear)/\(K.CurrentDate.currentMonth)")
@@ -104,8 +107,10 @@ class MainViewController: UIViewController {
         checkButton.isHidden = true
         checkLabel.isHidden = false
         
+        // set isDone to true, so the save button doesn't appear on the app
         K.DB.set(true, forKey: K.isDoneKey)
         
+        // Set today as the target day, so the app can check if the date is changed
         K.DB.set(K.CurrentDate.today, forKey: K.targetDay)
     }
 }

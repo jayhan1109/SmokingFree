@@ -39,9 +39,11 @@ class StatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getMonthData()
+        // Get week and month data
         getWeekData()
+        getMonthData()
         
+        // Show week data when the first loaded
         showWeekData()
         
         descLabel.text = K.SegmentText.week
@@ -111,6 +113,7 @@ class StatViewController: UIViewController {
         var yearKey = K.CurrentDate.currentYear
         var weekKey = K.CurrentDate.currentWeek
         
+        // If weekKey is less than 1, get last year's latest data
         for i in 0...6{
             if weekKey - i < 1 {
                 yearKey -= 1
@@ -131,6 +134,7 @@ class StatViewController: UIViewController {
         var yearKey = K.CurrentDate.currentYear
         var monthKey = K.CurrentDate.currentMonth
 
+        // If month is less than 1, get last year's latest data
         for i in 0...6{
             if monthKey - i < 1 {
                 yearKey -= 1
@@ -141,10 +145,9 @@ class StatViewController: UIViewController {
         }
         
         monthData.reverse()
-        
     }
     
-    // Show week data to the Segment Control
+    // Show week data to the BarChartView
     func showWeekData(){
         let xCollection = weekData.map { data in
             data.key
@@ -165,7 +168,7 @@ class StatViewController: UIViewController {
         descLabel.text = K.SegmentText.week
     }
     
-    // Show month data to the Segment Control
+    // Show month data to the BarChartView
     func showMonthData(){
         let xCollection = monthData.map { data in
             data.key
